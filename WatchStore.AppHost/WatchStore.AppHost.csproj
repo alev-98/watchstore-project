@@ -1,0 +1,26 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.3.2">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>1225066d-70ad-47c6-a0bb-ffb2e21664a4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.Azure.AppContainers" Version="13.3.2" />
+    <PackageReference Include="Aspire.Hosting.Azure.PostgreSQL" Version="13.3.2" />
+    <PackageReference Include="Aspire.Hosting.Azure.ServiceBus" Version="13.3.3" />
+    <PackageReference Include="Aspire.Hosting.Azure.Storage" Version="13.3.2" />
+    <PackageReference Include="Aspire.Hosting.Keycloak" Version="13.3.2-preview.1.26263.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\StripeCLI.Hosting\StripeCLI.Hosting.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\src\WatchStore.Shared\WatchStore.Shared.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\src\WatchStore.Api\WatchStore.Api.csproj" />
+    <ProjectReference Include="..\src\WatchStore.Worker\WatchStore.Worker.csproj" />
+  </ItemGroup>
+
+</Project>

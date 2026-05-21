@@ -1,0 +1,17 @@
+{
+    "UserConfig": {
+        "Namespaces": [
+            {
+                "Name": "watchstore",
+                "Queues": [
+                    {
+                        "Name": "orders"
+                    }
+                ]
+            }
+        ],
+        "Logging": {
+            "Type": "File"
+        }
+    }
+}
