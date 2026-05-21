@@ -1,0 +1,8 @@
+{
+  "WatchStore.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\HP\\Desktop\\C#\\WatchStore\\src\\WatchStore.Api",
+  "WatchStore.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\HP\\Desktop\\C#\\WatchStore\\src\\WatchStore.Contracts",
+  "WatchStore.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\HP\\Desktop\\C#\\WatchStore\\src\\WatchStore.Data",
+  "WatchStore.ServiceDefaults, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\HP\\Desktop\\C#\\WatchStore\\src\\WatchStore.ServiceDefaults",
+  "WatchStore.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\HP\\Desktop\\C#\\WatchStore\\src\\WatchStore.Shared",
+  "WatchStore.Worker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\HP\\Desktop\\C#\\WatchStore\\src\\WatchStore.Worker"
+}

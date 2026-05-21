@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\bin\Release\net10.0\WatchStore.Data.deps.json
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\bin\Release\net10.0\WatchStore.Data.dll
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\bin\Release\net10.0\WatchStore.Data.pdb
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\WatchStore.Data.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\WatchStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\WatchStore.Data.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\WatchStore.Data.AssemblyInfo.cs
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\WatchStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\WatchStore.Data.dll
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\refint\WatchStore.Data.dll
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\WatchStore.Data.pdb
+C:\Users\HP\Desktop\C#\WatchStore\src\WatchStore.Data\obj\Release\net10.0\ref\WatchStore.Data.dll
