@@ -105,6 +105,15 @@ if (builder.ExecutionContext.IsPublishMode)
     api.WithReference(keyvault);
 
     #endregion
+
+    #region Insights
+
+    var insights = builder.AddAzureApplicationInsights("app-insights");
+
+    api.WithReference(insights);
+    worker.WithReference(insights);
+
+    #endregion
 }
 
 builder.Build().Run();
