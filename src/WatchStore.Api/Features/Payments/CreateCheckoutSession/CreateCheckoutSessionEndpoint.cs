@@ -58,7 +58,8 @@ internal static class CreateCheckoutSessionEndpoint
                 Mode = "payment",
                 LineItems = lineItems,
                 ReturnUrl = $"{stripeOptions.Value.CheckoutReturnUrl.TrimEnd('/')}/{order.Id}",
-                CustomerEmail = user.FindFirstValue(JwtRegisteredClaimNames.Email),
+                CustomerEmail = user.FindFirstValue(JwtRegisteredClaimNames.Email)
+                                    ?? user.FindFirstValue("preferred_username"),
                 Metadata = new Dictionary<string, string>
                 {
                     { MetadataKeys.OrderId, order.Id.ToString()}
