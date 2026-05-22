@@ -1,0 +1,4 @@
+.azure
+.stripe
+**/bin/
+**/obj/

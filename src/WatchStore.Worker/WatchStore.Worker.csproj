@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-WatchStore.Worker-b7d8c762-b99e-4a73-9b96-f17bc85b4ab8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Azure.Messaging.ServiceBus" Version="13.3.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WatchStore.Contracts\WatchStore.Contracts.csproj" />
+    <ProjectReference Include="..\WatchStore.Data\WatchStore.Data.csproj" />
+    <ProjectReference Include="..\WatchStore.ServiceDefaults\WatchStore.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\WatchStore.Shared\WatchStore.Shared.csproj" />
+  </ItemGroup>
+</Project>
