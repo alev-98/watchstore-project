@@ -52,14 +52,16 @@ internal static class CreateCheckoutSessionEndpoint
                                     })
                                     .ToList();
 
+            var customerEmail = user.FindFirstValue(JwtRegisteredClaimNames.Email)
+                                    ?? user.FindFirstValue("preferred_username");
+
             SessionCreateOptions options = new()
             {
                 UiMode = "elements",
                 Mode = "payment",
                 LineItems = lineItems,
                 ReturnUrl = $"{stripeOptions.Value.CheckoutReturnUrl.TrimEnd('/')}/{order.Id}",
-                CustomerEmail = user.FindFirstValue(JwtRegisteredClaimNames.Email)
-                                    ?? user.FindFirstValue("preferred_username"),
+                CustomerEmail = customerEmail,
                 Metadata = new Dictionary<string, string>
                 {
                     { MetadataKeys.OrderId, order.Id.ToString()}
@@ -73,7 +75,7 @@ internal static class CreateCheckoutSessionEndpoint
 
             Session session = await sessionService.CreateAsync(options, requestOptions);
 
-            logger.LogInformation("Created checkout session: {SessionId}", session.Id);
+            logger.LogInformation("Created checkout session: {SessionId}, email {Email}", session.Id, customerEmail);
 
             var responseDto = new CheckoutSessionDto(
                                 session.ClientSecret,
